@@ -32,19 +32,19 @@ const incrementplayer1=()=>dispatch(increment2())
 useEffect(()=>{
     if(fichaSelecccionada1=="tijeras" && fichaSelecccionada2 == "roca"){
         dispatch(increment3())
-        setMessage("Win Player 2")
+        setMessage("Win player 2")
     }
     if(fichaSelecccionada2=="tijeras" && fichaSelecccionada1 == "papel"){
         incrementplayer2()
-        setMessage("Win Player 2")
+        setMessage("Win player 2")
     }
     if(fichaSelecccionada2=="tijeras" && fichaSelecccionada1 == "roca"){
         incrementplayer1()
-        setMessage("Win Player 1")
+        setMessage("Win player 1")
     };
     if(fichaSelecccionada1=="tijeras" && fichaSelecccionada2 == "papel"){
         incrementplayer1()
-        setMessage("Win Player 1")
+        setMessage("Win player 1")
     }
     if(fichaSelecccionada1=="tijeras" && fichaSelecccionada2 == "tijeras"){
         setMessage("DRAW")
@@ -54,19 +54,19 @@ useEffect(()=>{
     }
     if(fichaSelecccionada1=="papel" && fichaSelecccionada2 == "roca"){
         incrementplayer1()
-        setMessage("Win Player 1")
+        setMessage("Win player 1")
     }
     if(fichaSelecccionada2=="papel" && fichaSelecccionada1 == "roca"){
         incrementplayer2()
-        setMessage("Win Player 2")
+        setMessage("Win player 2")
     }
     if(fichaSelecccionada1=="papel" && fichaSelecccionada2 == "tijeras"){
         incrementplayer2()
-        setMessage("Win Player 2")
+        setMessage("Win player 2")
     }
     if(fichaSelecccionada2=="papel" && fichaSelecccionada1 == "tijeras"){
         incrementplayer1()
-        setMessage("Win Player 1")
+        setMessage("Win player 1")
     }
     if(fichaSelecccionada1=="roca" && fichaSelecccionada2 == "roca"){
         setMessage("DRAW")
