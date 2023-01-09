@@ -120,8 +120,8 @@ const resetPlay=()=>{
                 <article className={styles.messageWin}>
                 <h4 style={{color:`${messageFinal=="Win player 1"?"red":messageFinal=="Win player 2"?"blue":""}`}}>{messageFinal}</h4>
                 <div>
-                <img className={styles.zzz1} src={imgficha1} alt='player1ficha'/>
-                <img className={styles.zzz2} src={imgficha2} alt='player2ficha'/>
+                <img style={{boxShadow:`${messageFinal=="Win player 1"?"2px 2px 20px 2px red":""}`}} className={styles.zzz1} src={imgficha1} alt='player1ficha'/>
+                <img style={{boxShadow:`${messageFinal==="Win player 2"? "2px 2px 20px 2px blue":""}`}} className={styles.zzz2} src={imgficha2} alt='player2ficha'/>
                 </div>
                 <button onClick={resetPlay}>Play again</button>
                 </article>
