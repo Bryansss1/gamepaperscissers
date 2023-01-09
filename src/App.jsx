@@ -14,9 +14,7 @@ function App() {
 <HashRouter> 
  
 <Routes>
-
 <Route path='/twoplayer' element={<Player2/>}/>
-
 <Route path='/oneplayer' element={<Player1/>}/>
 <Route path='/' element={<Home/>}/>
 </Routes>
