@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(18,22,57,1) 26%, rgba(0,86,142,1) 85%);
+}
+
+h1{ 
+    margin: 0rem 1rem;
+    font-weight: 900;
+    animation-timing-function: linear;
+    font-size: 1.9rem;
+    margin-top: 7rem;
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.initial-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:7rem;
+    button{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        animation-timing-function: linear;
+        font-size: 1.2rem;
+        ;
+        padding: 1rem;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        background: white;
+        transition: all .2s;
+    }
+    button:hover{
+        color: rgb(7, 196, 0);
+        text-shadow: 1px 1px 1px rgb(7, 7, 7);
+        font-size: 1.4rem;
+        
+    }
+
+    .a{
+        border: 10px solid rgb(255, 0, 0);
+        animation:  flotar infinite 3s;
+    }
+    .e{
+        border: 10px solid rgb(5, 84, 255);
+        animation:  flotar infinite 2.7s;
+    }
+}
+
+@keyframes flotar {
+    0%{
+        bottom: 0rem;
+        box-shadow: 1px 1px 3px 1px rgb(20, 0, 92);
+    }
+    50%{
+        bottom: 1rem;
+        box-shadow: 1px 1px 3px 1px transparent;
+    }
+    100%{
+        bottom: 0rem;
+        box-shadow: 1px 1px 3px 1px rgb(32, 0, 90);
+    }
+}
+
+.footerr{
+margin-top: 12rem;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: black;
+}
+
+
+@media screen and (min-width:750px) {
+h1{
+    font-size: 3rem;
+}
+}

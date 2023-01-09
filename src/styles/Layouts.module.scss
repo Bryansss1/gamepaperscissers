@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.layout_score{
+    .titlelayo{
+        font-size: 1.3rem;
+        margin: auto;
+    }
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    text-align: center;
+    color :white;
+    text-shadow: 1px 1px 1px black;
+    justify-content: space-around;
+    display: flex;
+   border-top: 3px solid rgba(255, 255, 255, 0.411);
+   border-bottom: 3px solid rgba(255, 255, 255, 0.411);
+    .players{
+        padding: .3rem;
+        h2{
+            color: rgb(3, 3, 150);
+        }
+        color: black;
+        text-shadow: none;
+        background: white;
+        border-radius: 5%;
+    }
+}
+
+
+@media screen and (min-width:700px) {
+    .layout_score{
+        margin: 1rem;
+        border: 3px solid rgba(255, 255, 255, 0.411);
+        border-radius: 1%;
+        .titlelayo{
+            font-size: 2rem;
+        }
+        .players{
+            p{
+              font-size: 1.3rem;  
+            }
+            padding: 1.5rem;
+        }
+    }
+}
