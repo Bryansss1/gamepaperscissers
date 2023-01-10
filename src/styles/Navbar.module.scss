@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    
+    ul{
+        a{
+            transition: all .2s;
+            background: rgba(0, 0, 77, 0.329);
+            text-decoration: none;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.397);
+            padding: .5rem;
+            border-radius: 10%;
+        }
+        a:hover{
+            background: rgba(255, 2, 2, 0.329);
+        }
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem 0rem;
+    }
+}

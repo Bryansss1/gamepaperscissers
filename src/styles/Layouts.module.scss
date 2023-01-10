@@ -6,6 +6,7 @@
 
 
 .layout_score{
+    align-items: center;
     .titlelayo{
         font-size: 1.3rem;
         margin: auto;
@@ -21,6 +22,8 @@
    border-top: 3px solid rgba(255, 255, 255, 0.411);
    border-bottom: 3px solid rgba(255, 255, 255, 0.411);
     .players{
+        
+        text-align: center;
         padding: .3rem;
         h2{
             color: rgb(3, 3, 150);

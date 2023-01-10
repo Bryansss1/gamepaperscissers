@@ -8,8 +8,7 @@ import papel from "/rock-paper-scissors-master/images/icon-paper.svg"
 import triangule from "/rock-paper-scissors-master/images/bg-triangle.svg"
 import { increment2 } from '../store/slices/counttwoplayer.slice';
 import {increment3} from "../store/slices/counttwoplayer2.slice"
-import styles2 from "../styles/Layouts.module.scss"
-
+import Navbasic from '../components/Navbasic';
 
 const Player2 = () => {
 const dispatch=useDispatch()
@@ -21,7 +20,6 @@ const [player2,setPlayer2]=useState(false)
 
 const [fichaSelecccionada1,setFicha1]=useState("")
 const [fichaSelecccionada2,setFicha2]=useState("")
-
 const [imgficha1,setImgficha1]=useState("")
 const [imgficha2,setImgficha2]=useState("")
 
@@ -98,8 +96,10 @@ const resetPlay=()=>{
 
     return (
         <section className={styles.twoplayerpage}>
+            <Navbasic/>
             <Layoutcountertwoplayer counter2={counter2} counter3={counter3}/>
             <article className={styles.placegame}>
+                
              {fichaSelecccionada2!==""?"":(
                 <>
                 {player1===true?<h3 style={{color:"red"}} className={styles.playertext}>Player 1</h3>:""}
