@@ -15,7 +15,7 @@ const Home = () => {
           </div>
         </section>
         <div className='footerr'>
-          <i className='bx bxl-github bx-md'></i>
+          <a href="https://github.com/Bryansss1" target="_blank"><i className='bx bxl-github bx-md'></i></a>
             <p>Bryan sanabria @bryansss1</p>
             <p>2023 enero</p>
         </div>
