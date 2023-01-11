@@ -10,6 +10,7 @@ import papel from "/rock-paper-scissors-master/images/icon-paper.svg"
 import triangule from "/rock-paper-scissors-master/images/bg-triangle.svg"
 import { increment } from '../store/slices/count.slice';
 import Navbasic from '../components/Navbasic';
+import { incrementrobot } from '../store/slices/countrobot.slice';
 
 const Player1 = () => {
 const [fichaSelecccionada1,setFicha1]=useState("")
@@ -18,7 +19,8 @@ const [player1,setPlayer1]=useState(true)
 const [imgficha1,setImgficha1]=useState("")
 const [imgficha2,setImgficha2]=useState("")
 const [messageFinal,setMessage]=useState("")
-const [counter2,setCounter]=useState(0)
+
+const counterRobot=useSelector(state=>state.countrobotSlice)
 const counter1=useSelector(state=>state.countSlice)
 const dispatch=useDispatch()
 const Jugada=Math.floor(Math.random()*3)
@@ -32,7 +34,7 @@ const resetPlay=()=>{
 }
 
 const incrementplayer=()=>dispatch(increment())
-const robotwin=()=>setCounter(counter2+2)
+const robotwin=()=>dispatch(incrementrobot())
 
 useEffect(()=>{
 setFicha2(jugadasRobot[Jugada])
@@ -114,7 +116,7 @@ console.log(imgficha2)
     return (
         <section className={styles.oneplayerpage}>
             <Navbasic/>
-            <Layoutcounter counter2={counter2} counter1={counter1}/>
+            <Layoutcounter counter2={counterRobot} counter1={counter1}/>
             <article className={styles.placegame}>
             
             {fichaSelecccionada1!==""?"":(
